@@ -1,0 +1,40 @@
+<div class="bg-gradient-container">
+<div class="container-fluid mt-3">
+<div class="container">
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>TITULO</th>
+                <th>DESCRIPCION</th>
+                <th>COMPLETADO</th>
+                <th>ACCIONES</th>
+                <th>CONFIGURACION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tarea of tareas">
+                <td>{{ tarea.id }}</td>
+                <td>{{ tarea.titulo }}</td>
+                <td>{{ tarea.description }}</td>
+                <td>{{ tarea.completado }}</td>
+                <td>
+                    <span *ngIf="tarea.completado; else notCompleted">Completado</span>
+                    <ng-template #notCompleted>No</ng-template>
+                </td>
+                <td>
+                    
+                   <button class="btn btn-sm btn-warning btn-outline-grey animate__animated animate__fadeInleft">Editar</button>
+                   <button class="btn btn-sm btn-danger btn-outline-grey animate__animated animate__fadeInleft">Eliminar</button>
+                   
+                </td>
+            </tr>
+            <!-- Si no hay tareas, mostrar un mensaje -->
+            <tr *ngIf="!tareas || tareas.length === 0">
+                <td colspan="5">No hay tareas disponibles</td>
+            </tr>
+    
+      </tbody>
+    </table>
+ </div>
+</div>

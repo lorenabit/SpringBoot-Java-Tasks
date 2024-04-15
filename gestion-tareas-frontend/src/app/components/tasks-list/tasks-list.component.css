@@ -1,0 +1,22 @@
+.table {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    /* Estilos personalizados aquí */
+}
+
+/* Contenido dentro del componente */
+.container {
+    padding: 0px;
+    
+    
+}
+
+/* Degradado de fondo personalizada */
+.bg-gradient-container {
+    background: linear-gradient(to bottom, #f0cae6, #d47ac5);
+    width: 80%;
+    margin: 10% auto 0;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1); 
+    
+}
+
