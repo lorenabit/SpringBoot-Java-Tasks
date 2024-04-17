@@ -1,0 +1,19 @@
+
+/*Estilos para botón personalizado*/
+.btn-custom {
+    background-color: #2e77caf1; /*Fondo personalizado*/
+    color: #333131; /*Color texto*/
+    border: 1px solid #685130; /*Borde*/
+    font-weight: bold;/*Fuente en negrita*/
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);/*Sombra*/
+   
+    
+}
+
+.container{
+    padding: 50px; /*Espaciado interno*/
+    margin: 0 auto;/*Centra horizontalmente el contenedor*/
+    width: 70%;/*Ancho contenedor*/
+    background-color: #aaaaaab6;/*Color fondo*/
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(0, 0, 0, 0.1), 0px 30px 60px rgba(0, 0, 0, 0.1);/*Sombra*/
+}

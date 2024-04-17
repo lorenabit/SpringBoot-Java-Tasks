@@ -1,40 +1,60 @@
-<div class="bg-gradient-container">
-<div class="container-fluid mt-3">
-<div class="container">
-    <table class="table table-hover">
-        <thead class="thead-dark">
-            <tr>
-                <th>ID</th>
-                <th>TITULO</th>
-                <th>DESCRIPCION</th>
-                <th>COMPLETADO</th>
-                <th>ACCIONES</th>
-                <th>CONFIGURACION</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let tarea of tareas">
-                <td>{{ tarea.id }}</td>
-                <td>{{ tarea.titulo }}</td>
-                <td>{{ tarea.description }}</td>
-                <td>{{ tarea.completado }}</td>
-                <td>
-                    <span *ngIf="tarea.completado; else notCompleted">Completado</span>
-                    <ng-template #notCompleted>No</ng-template>
-                </td>
-                <td>
-                    
-                   <button class="btn btn-sm btn-warning btn-outline-grey animate__animated animate__fadeInleft">Editar</button>
-                   <button class="btn btn-sm btn-danger btn-outline-grey animate__animated animate__fadeInleft">Eliminar</button>
-                   
-                </td>
-            </tr>
-            <!-- Si no hay tareas, mostrar un mensaje -->
-            <tr *ngIf="!tareas || tareas.length === 0">
-                <td colspan="5">No hay tareas disponibles</td>
-            </tr>
-    
-      </tbody>
-    </table>
- </div>
+
+<!--Contenedor uno-->
+<div class="container_one">
+    <!--Contenedor con margen superior 3 -->
+    <div class="container mt-3">
+        <!--Tabla responsive-->
+        <div class="table-responsive">
+            <!--Tabla con Bootstrap-->
+            <table class="table table-sm table-hover">
+                <!--Encabezado tabla-->
+                <thead class="thead-dark">
+                    <tr class="tr-color">
+                        <!--Columnas encabezado-->
+                        <th>Nº</th>
+                        <th>TITULO</th>
+                        <th class="d-done d-dm-table-cell">DESCRIPCION</th>
+                        <th>COMPLETADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <!--Ciclo para cada tarea de la lista-->
+                    <tr *ngFor="let tarea of tareas">
+                        <!--Columnas de datos-->
+                        <td>{{ tarea.id }}</td>
+                        <td>{{ tarea.titulo }}</td>
+                        <td>{{ tarea.description }}</td>
+                        <td>
+                            <!--Checkbox de completado más imagen-->
+                            <input type="checkbox" [checked]="tarea.completado" disabled>
+                            <!--Condición para mostrar imagen completado-->
+                            <ng-container *ngIf="tarea.completado; else noCompletado">
+                                <img src="assets/img/ok.png" alt="Completado" class="img-custom">
+                            </ng-container>
+                            <!--Imagen si no está completado-->
+                            <ng-template #noCompletado>
+                                <img src="assets/img/off.png" alt="No Completado" class="img-custom">
+                            </ng-template>
+                        </td>
+                        <!--Columna acciones-->
+                        <td>
+                            <!--Botón editar-->
+                            <button class="btn btn-custom_1 btn-sm animate__animated " routerLink="/tareas/{{tarea.id}}/edit">Editar</button>
+                            &nbsp; <!--Espacio en blanco-->
+                            <!-- Botón eliminar-->
+                            <button class="btn btn-sm btn-custom_2 animate__animated " (click)="deleteTarea(tarea.id)">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Botón de creación de tarea -->
+        <div class="btn m-5 ">
+            <a routerLink="/tareas/new" class="btn btn-custom">
+                Crear tarea!
+            </a>  
+        </div> 
+    </div>
 </div>

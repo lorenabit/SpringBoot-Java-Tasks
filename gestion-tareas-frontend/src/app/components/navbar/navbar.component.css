@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;/*Espacio entre los elementos*/
+    align-items: center; /*Centrado vertical*/
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;/*Centrado vertical*/
+    margin-left: auto;/*Elementos a la derecha */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 15px; /*Espacio entre los elementos del menú*/
+  }

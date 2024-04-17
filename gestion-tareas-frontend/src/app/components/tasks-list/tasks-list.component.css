@@ -1,22 +1,73 @@
+/*Estilos tabla*/
 .table {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
-    /* Estilos personalizados aquí */
+    font-size: 14px; /*Tamaño fuente*/
+    width: 100%; /*Ancho tabla al 100% */
+    margin: 0 auto; /*Centra horizontalmente  tabla*/
+    box-shadow: 0px 30px 40px rgba(79, 160, 33, 0.1); /*Sombra*/
 }
 
-/* Contenido dentro del componente */
+/*Estilos tabla responsive*/
+.table-responsive {
+    overflow-x: auto; /*Desplazamiento horizontal dispositivos pequeños*/
+}
+
+/*Celdas de encabezado tabla */
+.table th {
+    background-color: #e58c8c; /*Color de fondo*/
+    text-align: center; /*Alinear del texto*/
+}
+
+/*Estilos celdas tabla*/
+.table td {
+    text-align: center; /*Alinear del texto*/
+    background-color: #f0e2e279; /*Color de fondo*/
+    padding: 10px; /*Espaciado interno*/
+}
+
+/* Estilos botones dentro de las celdas de la tabla */
+.table td button {
+    margin-top: 3px; /*Margen superior*/
+    margin-right: 5px; /*Margen derecho*/
+}
+
+/*Contenedor uno y contenedor*/
+.container_one,
 .container {
-    padding: 0px;
-    
-    
+    padding: 20px; /*Espaciado interno*/
+    width: 90%; /*Ancho del contenedor*/
+    margin: 10% auto 0; /*Margen superior automático y centrado*/
+    box-shadow: 0px 30px 40px rgba(184, 37, 37, 0.5); /*Sombra*/
 }
 
-/* Degradado de fondo personalizada */
-.bg-gradient-container {
-    background: linear-gradient(to bottom, #f0cae6, #d47ac5);
-    width: 80%;
-    margin: 10% auto 0;
-    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1); 
-    
+/*Mas estilos para el contenedor*/
+.container {
+    padding: 40px; /*Espaciado interno*/
 }
 
+/*Botón personalizado*/
+.btn-custom {
+    background-color: #eea406c4; /*Fondo personalizado*/
+    color: #4d4747; /*Color texto*/
+    font-weight: bold; /*Fuente en negrita*/
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); /*Sombra*/
+}
+
+/*Mas estilos botones personalizados*/
+.btn-custom_1 {
+    background-color: #49c523ea; /*Color fondo personalizado*/
+    color: #4d4747; /*Color texto*/
+    font-weight: bold; /*Fuente en negrita*/
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); /*Sombra*/
+}
+
+.btn-custom_2 {
+    background-color: #f82020cb; /*Fondo personalizado*/
+    color: #4d4747; /*Color texto*/
+    font-weight: bold; /*Fuente en negrita*/
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); /*Sombra*/
+}
+
+/*Estilos imágenes*/
+.img-custom {
+    margin-left: 10px; /*Margen izquierdo*/
+}

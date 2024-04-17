@@ -1,1 +1,40 @@
-<p>form-tasks works!</p>
+
+<!--Contenedor principal-->
+<div class="container_1">
+
+<!--Contenedor secundario con el formulario-->
+<div class="container mt-5">
+
+   <!--Titulo Formulario (Nuevo o Editar tarea)-->
+    <h2>{{ tarea.id ? 'Editar' : 'Nueva' }} tarea</h2>
+
+    <!--Formulario crear/editar tarea-->
+    <form (ngSubmit)="saveOrUpdateTask()">
+
+      <!--Campo para el título de la tarea-->
+      <div class="form-group">
+          <label for="titulo">Titulo</label>
+          <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="tarea.titulo" required>
+      </div>
+
+      <!--Campo para la descripción de la tarea-->
+      <div class="form-group mt-5">
+          <label for="descripcion">Descripcion</label>
+          <textarea class="form-control" name="descripcion" id="descripcion" [(ngModel)]="tarea.description" required></textarea>
+      </div>
+
+      <!--Checkbox para marcar la tarea como completada-->
+      <div class="form-group form-check mt-5">
+        <input class="form-check-input" type="checkbox" [(ngModel)]="tarea.completado" name="completado" id="completadoCheckbox">
+        <label class="form-check-label" for="completadoCheckbox">
+            <!--Marca de completado si la tarea está completada-->
+            <img *ngIf="tarea.completado" src="assets/img/ok.png" alt="Completado" />
+            <!-- Texto si la tarea no está completada -->
+            <span *ngIf="!tarea.completado">Completado</span>
+        </label>
+    </div>
+    <!--Botón a formulario (Guardar o Actualizar tarea)-->
+      <button type="submit" class="btn mt-4 mb-2 btn-custom">{{ tarea.id ? 'Actualizar' : 'Guardar'}}</button>
+    </form>
+  </div>
+  </div>

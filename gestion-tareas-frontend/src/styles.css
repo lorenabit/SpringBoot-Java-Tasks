@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: #d8b621; /* Color de fondo gris claro */
+    background-color: #ddbf49c0; /* Color de fondo gris claro */
+    font-size: 16px; /* Tamaño de fuente predeterminado */
+    line-height: 1.5; /* Espaciado entre líneas predeterminado */
 }
+
+
+
+  
+  /* Media queries para tamaños de pantalla específicos */
+  @media screen and (max-width: 768px) {
+    /* Cambiar el tamaño de la fuente y el espaciado para pantallas pequeñas */
+    body {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* Cambiar el tamaño de la fuente y el espaciado para pantallas extra pequeñas */
+    body {
+      font-size: 12px;
+      line-height: 1.3;
+    }
+  }
+  
