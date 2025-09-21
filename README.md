@@ -55,8 +55,10 @@ Haz fork del repositorio
 3.Haz push y crea un Pull Request
 
 
-📬 Contacto
-GitHub: lorenabit
-LinkedIn: Lorena Rivas Ramírez
-YouTube: Desarrollo Mouse
+### 📬 Contacto
+
+[![GitHub](https://skillicons.dev/icons?i=github)](https://github.com/lorenabit)
+[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/lorenarivasramirez-fullstackdev)
+[![YouTube](https://api.iconify.design/logos:youtube.svg)](https://www.youtube.com/@DesarrolloMouse)
+
 
