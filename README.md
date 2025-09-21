@@ -1,22 +1,62 @@
 # SpringBoot-Java-Tasks
 
-Practice backend and frontend in Java With SpringBoot & MySQL. The frontend is developed with Angular Version 17, while the backend boasts its custom database built in Netbeans using Java, SpringBoot, and MySQL. Endpoint testing is conducted in Postman.
+# 🧩 SpringBoot Java Tasks
 
-### Installation
+Este proyecto incluye una aplicación completa con **backend en Java (Spring Boot + MySQL)** y **frontend en Angular v7**. Las tareas están diseñadas para practicar autenticación de usuarios, gestión de transacciones y conexión entre capas.
 
-Clone this repository.
-Run "npm install" to install the dependencies.
+---
 
-### Usage
+## 📦 Estructura del repositorio
 
-Run "ng serve -o" to start the development server.
-Open your browser at "http://localhost:4200".
+---
 
-###Contribution
+## 🚀 Tecnologías utilizadas
 
-If you want to contribute to this project, please follow these instructions:
-1. Fork the project.
-2. Create a new branch (git checkout -b feature/fooBar).
-3. Make your changes and commit (git commit -am 'Add some fooBar').
-4. Push the branch (git push origin feature/fooBar).
-5. Create a new Pull Request.
+- **Backend**: Java, Spring Boot, Spring Data JPA, MySQL  
+- **Frontend**: Angular v7, TypeScript, HTML/CSS  
+- **Otros**: Maven, npm
+
+---
+
+## ⚙️ Instalación y ejecución
+
+### 🔧 Backend
+
+1. Ve a la carpeta `gestion-transac-backend`
+2. Configura tu base de datos MySQL en el archivo `application.properties`
+3. Ejecuta el proyecto con Maven:
+   ```bash
+   mvn spring-boot:run
+
+## 💻 Frontend
+Ve a la carpeta gestion-transac-frontend
+
+Instala las dependencias: 
+npm install
+
+Ejecuta el servidor de desarrollo:
+ng serve
+
+Abre tu navegador en http://localhost:4200
+
+## 📹 Vídeo explicativo
+
+Este proyecto está explicado en mi canal Desarrollo Mouse, donde muestro cómo conectar frontend y backend paso a paso.
+
+👉 Mira el vídeo aquí: YouTube - SpringBoot Java Tasks
+
+## 🤝 Cómo contribuir
+Haz fork del repositorio
+
+1.Crea una rama: feature/nueva-funcionalidad
+
+2.Realiza tus cambios y haz commit: Add nueva funcionalidad
+
+3.Haz push y crea un Pull Request
+
+
+📬 Contacto
+GitHub: lorenabit
+LinkedIn: Lorena Rivas Ramírez
+YouTube: Desarrollo Mouse
+
